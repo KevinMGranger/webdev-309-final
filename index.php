@@ -15,4 +15,4 @@
 	</body>
 </html>
 
-<!-- vim:set ft=html-->
+<!-- vim:ft=html-->
