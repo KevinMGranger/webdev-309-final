@@ -82,4 +82,4 @@
 	</body>
 </html>
 
-<!-- vim:ft=html-->
+<!-- vim: set ft=html:-->
