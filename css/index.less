@@ -1,30 +1,10 @@
-@import "solarized.less";
+@import "main.less";
 
-@debug: false;
-
-@BoxSize: 150px;
-@LinkBorderSize: 4px;
 @Padding: 10px;
 
 @containerSize: (((@BoxSize + (@LinkBorderSize * 2)) * 3));
 
-html, body {
-	min-height: 100%;
-}
-
-
-body {
-	//height: 100%;
-	background-image: linear-gradient(to bottom, @base0, @base2);
-	//background-size: cover;
-}
-
-//div.container {
-//	position: relative;
-//}
-
-// nav less {{{
-.nav () {
+nav {
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	margin: auto;
@@ -37,16 +17,6 @@ body {
 		max-height: 100%;
 	}
 }
-
-.nav () when (@debug) {
-	border: @LinkBorderSize solid black;
-}
-
-.nav () when (@debug = false) {
-}
-// end nav less }}}
-
-nav { .nav; }
 
 // absolute method {{{
 //.navlink {
@@ -85,44 +55,30 @@ nav { .nav; }
 //}
 // end absolute method }}}
 
-p {
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 18px;
-}
-
 .navlink {
-	border: @LinkBorderSize solid black;
-	width: @BoxSize;
 	height: @BoxSize;
-	margin: 1px;
-	display: table;
+	position: static;
 
-	p {
-		display: table-cell;
-		text-align: center;
-		vertical-align: middle;
-	}
 	@media (max-width: @containerSize) {
 		float: none!important;
 		margin: @LinkBorderSize auto;
 	}
-}
 
+	&.navContact {
+		float: left;
+	}
+	&.navDoc {
+		float: right;
+	}
+	&.navPhp {
+		float: left;
+	}
+	&.navPort {
+		float: right;
+	}
+	&.navAbout {
+		clear: both;
+		margin: auto;
+	}
 
-#navContact {
-	float: left;
-}
-
-#navDoc {
-	float: right;
-}
-#navAbout {
-	clear: both;
-	margin: auto;
-}
-#navPhp {
-	float: left;
-}
-#navPort {
-	float: right;
 }

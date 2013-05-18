@@ -3,46 +3,46 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>Kevin Granger: Contact</title>
-		<?php include './lib/inc/masterstyle.html'; ?>
+		<?php include './lib/inc/fonts.html' ?>
+		<link rel="stylesheet/less" type="text/css" href="./css/contact.less">
+		<script src="/webdev-309/final/lib/js/less.min.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<div class='container'>
 			<?php include './lib/inc/nav.html'; ?>
-			<div class='phone'>
-			        <a href=''>
-			                <img src='./img/icons/' alt='' />
-			        </a>
-			        <a href=''>
-			                <p>These</p>
-			        </a>
+			<div class='contactblock phone'>
+				<a href=''>
+					<img src='./img/icons/phone' alt='' />
+				</a>
+				<a href=''>
+					<p>These</p>
+				</a>
 			</div>
-			<div class='mail'>
-			        <a href=''>
-			                <img src='./img/icons/' alt='' />
-			        </a>
-			        <a href=''>
-			                <p>are</p>
-			        </a>
+			<div class='contactblock mail'>
+				<a href=''>
+					<img src='./img/icons/mail' alt='' />
+				</a>
+				<a href=''>
+					<p>are</p>
+				</a>
 			</div>
-			<div class='face'>
-			        <a href=''>
-			                <img src='./img/icons/' alt='' />
-			        </a>
-			        <a href=''>
-			                <p>filled w/</p>
-			        </a>
+			<div class='contactblock face'>
+				<a href=''>
+					<img src='./img/icons/facepod' alt='' />
+				</a>
+				<a href=''>
+					<p>filled w/</p>
+				</a>
 			</div>
-			<div class='twit'>
-			        <a href=''>
-			                <img src='./img/icons/' alt='' />
-			        </a>
-			        <a href=''>
-			                <p>JavaScript</p>
-			        </a>
+			<div class='contactblock twit'>
+				<a href=''>
+					<img src='./img/icons/birdie' alt='' />
+				</a>
+				<a href=''>
+					<p>JavaScript</p>
+				</a>
 			</div>
-		</div>
 
-		<script src="./lib/js/jquery.js"></script>
+		<?php include './lib/inc/navhandler.html' ?>
 		<script src="./lib/js/populatecontact.js"></script>
 	</body>
 </html>

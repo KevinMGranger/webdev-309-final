@@ -10,18 +10,18 @@ Todo
 
 ##### Index
 - [x] Markup
-- [ ] CSS
-- [ ] JS
+- [x] CSS
+- [x] JS
 
 ##### About Me
 - [x] Markup
-- [ ] CSS
-- [ ] JS
+- [x] CSS
+- [x] JS
 
 ##### Contact
 - [x] Markup
 - [ ] CSS
-- [~] JS
+- [x] JS
 
 ##### Secret / PHPlaythings
 - [ ] Markup
@@ -35,10 +35,10 @@ Todo
 
 
 #### JavaScript / jQuery
-- [ ] Animation of Navigation (index -> sub-page)
+- [x] Navigation Modifications
 
 #### Fancy PHP
-- [ ] Click Counter
+- [ ] Counter
 
 
 - [x] SSI / PHP includes

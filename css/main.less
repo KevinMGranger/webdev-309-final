@@ -1,0 +1,102 @@
+@import "solarized.less";
+
+@LinkBorderSize: 4px;
+@BoxSize: 150px;
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	background-color: @base2;
+	background-image: linear-gradient(to right, @base1, @base2 20%, @base2 80%, @base1);
+}
+
+p, h2 {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	color: @blue;
+	text-decoration: none;
+}
+
+.navlink {
+	font-size: x-large;
+	border: @LinkBorderSize solid black;
+	margin: 1px;
+	width: @BoxSize;
+	height: 2em;
+
+	position: fixed;
+	display: table;
+
+	p {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	&.navCurrent {
+		border: (@LinkBorderSize / 1.5) dotted black;
+		font-weight: bold;
+		font-family: 'Ubuntu Mono', 'Ubuntu', sans-serif;
+		letter-spacing: 0.1em;
+		color: black;
+		background-color: @base01;
+		text-decoration: none;
+	}
+
+	&.navBack {
+		border: (@LinkBorderSize / 2) solid black;
+	}
+
+	&.navContact {
+		//float: left;
+		top: 0; left: 0;
+	}
+	&.navDoc {
+		//float: right;
+		top:0; right: 0;
+	}
+	&.navPhp {
+		//float: left; bottom: 0;
+		bottom: 0; left: 0;
+	}
+	&.navPort {
+		//float: right; bottom: 0;
+		bottom: 0; right: 0;
+	}
+	&.navAbout {
+		right:0;
+		top: 50%;
+		margin-top: -1em;
+	}
+	&.navHome {
+		left:0;
+		top: 50%;
+		margin-top: -1em;
+	}
+}
+
+.hover {
+	font-size: large;
+	background-color: @base02;
+}
+
+article {
+	max-width: (1000px - (2 * @BoxSize));
+	margin: auto;
+	padding: 8px;
+
+	font-size: large;
+
+	border: (@LinkBorderSize / 2) solid black;
+	border-radius: 5px;
+	background: @base2;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
