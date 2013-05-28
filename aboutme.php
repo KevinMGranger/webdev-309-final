@@ -5,7 +5,7 @@
 		<title>Kevin Granger: About Me</title>
 		<?php include './lib/inc/fonts.html'; ?>
 		<link rel="stylesheet/less" type="text/css" href="./css/main.less">
-		<script src="/webdev-309/final/lib/js/less.min.js" type="text/javascript"></script>
+		<script src="/~kmg2728/webdev-309/final/lib/js/less.min.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<?php include './lib/inc/nav.html'; ?>
