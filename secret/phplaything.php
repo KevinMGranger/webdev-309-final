@@ -3,15 +3,18 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>Kevin Granger: PHPlaything</title>
-		<?php include '/webdev-309/final/lib/inc/fonts' ?>
-		<link rel="stylesheet/less" type="text/css" href="/webdev-309/final/css/main.less">
-		<script src="/webdev-309/final/lib/js/less.min.js" type="text/javascript"></script>
+		<?php include '../lib/inc/fonts.html'; ?>
+		<link rel="stylesheet/less" type="text/css" href="../css/main.less">
+		<script src="/~kmg2728/webdev-309/final/lib/js/less.min.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<div class='container'>
-			<?php include '/webdev-309/final/lib/inc/nav.html'; ?>
+		<article>
+			<?php include '../lib/inc/nav.html'; ?>
 
-			<?php include '/webdev-309/final/secret/count.txt'; ?>
+			<p>
+			<?php include './count.txt'; ?>
+			!
+			</p>
 
 			<form method="post" action="counter.php">
 
@@ -21,7 +24,7 @@
 
 				<input type='submit' value='counter++;' />
 			</form>
-		</div>
+			</article>
 	</body>
 </html>
 
